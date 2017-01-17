@@ -7,6 +7,7 @@ class RoomsController < ApplicationController
   end
 
   def show
+     @themes = @room.themes
   end
 
   def new
@@ -43,7 +44,7 @@ class RoomsController < ApplicationController
         params.require(:room) .permit(:home_type, :room_type, :accommodate,
         :bedroom_count, :bathroom_count, :listing_name, :description,
         :address, :has_tv, :has_kitchen, :has_airco, :has_eating,
-        :has_internet, :price, :active)
+        :has_internet, :price, :active, theme_ids: [])
       end
 
 end
