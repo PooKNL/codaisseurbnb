@@ -1,6 +1,6 @@
+Theme.delete_all
 User.delete_all
 Room.delete_all
-Theme.delete_all
 
 modern_and_minimal = Theme.create(name: "Modern and Minimal")
 sleek_and_sophisticated = Theme.create(name: "Sleek and Sophisticated")
