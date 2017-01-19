@@ -71,6 +71,5 @@ gem 'faker', '1.6.6'
 
 gem 'rails_12factor', group: :production
 
-gem 'carrierwave'
-
-gem 'cloudinary'
+gem 'carrierwave', '0.11.2'
+gem 'cloudinary', '1.2.3'
