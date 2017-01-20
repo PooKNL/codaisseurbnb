@@ -1,4 +1,4 @@
-<%= form_for @room do |f| %>
+<%= form_for @room, html: { multipart: true } do |f| %>
   <div class="form-group">
     <label>Home Type</label>
     <%= f.select :home_type, [["Apartment", "Apartment"], ["House", "House"], ["Bed & Breakfast", "Bed & Breakfast"]], id: "home_type", prompt: "Select home type", class: "form-control" %>
@@ -64,6 +64,19 @@
       <div class="input-group-addon">€</div>
       <%= f.number_field :price, placeholder: "eg. 100", class: "form-control" %>
     </div>
+  </div>
+
+  <label>Photos</label>
+
+  <div class="form-group">
+    <span class="btn btn-default">
+      Upload Photos
+      <%= file_field_tag "images[]", type: :file, multiple: true %>
+    </span>
+  </div>
+
+    <div id="photos">
+    <%= render 'photos/list' %>
   </div>
 
   <label>Publish this place?</label>
