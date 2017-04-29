@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Bed & Breakfast site I made during the Codaisseur course. It was made in Rails 5 with postgresql DB. Rspec was used for testing. 
 
-Things you may want to cover:
+Nothing special and I am just saving it so that I always have the possibility to look back on where I once started. :)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Kind regards, RobertJ
